@@ -1,0 +1,480 @@
+* {
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+body{
+  user-select: none;
+}
+.btnteansition {
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in; 
+  -o-transition: all 0.5s ease-in;
+}
+.usNone {
+  user-select: none;
+}
+.MoveIcon {
+  visibility: hidden;
+  position: relative;
+  left: -56px;
+  top: 2px;
+}
+.moveIconParent:hover .MoveIcon {
+  transform: translate(15px);
+  transition: all 0.3s ease-in;
+  visibility: visible;
+}
+
+.largeTopMargin {
+  margin-top: 100px !important;
+  padding-top: 100px !important;
+}
+
+.LinksHover {
+  /* transform: scale(1.1);
+    transition: all .5s; */
+  color: yellow !important;
+  border-bottom: 1px solid yellow !important;
+}
+.bodyColor {
+  background-color: #000000;
+}
+.nav-item a {
+  border-bottom: 1px solid #000000;
+}
+.headerbtn:hover,
+.aboutHover:hover {
+  background-color: rgb(255, 193, 7);
+  color: black !important;
+}
+.AboutOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: rgba(255, 255, 255, 0.137);
+  z-index: 5;
+  font-size: 90px;
+}
+.AboutOverlayParent {
+  position: relative;
+}
+.aboutCont {
+  z-index: 10;
+}
+.AboutMeText {
+  color: rgb(168, 160, 160);
+}
+.carousel .carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+}
+/* ---------------------------------- */
+.shadowParent {
+  position: relative;
+  z-index: 10;
+}
+.shadowChildResume {
+  bottom: 0;
+  left: 30%;
+  top: 0%;
+  font-size: 103px;
+}
+.shadowChild {
+  position: absolute;
+
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.137);
+}
+.shadowChildupdate {
+  top: -14px;
+  left: 23%;
+  font-size: 100px;
+}
+
+.resumeColor {
+  background-color: rgb(26, 26, 26);
+}
+
+.ServicesHover:hover {
+  transition: all 0.5s ease-in;
+  background-color: #ffe227 !important;
+  color: black !important;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.ServicesHover:hover hr {
+  border-color: #000000 !important;
+}
+.ServMinHeight {
+  min-height: 205px !important;
+}
+/* -------------------- skills------------------------------- */
+.shadowChildupdateSkills {
+  top: -14px;
+  left: 33%;
+  font-size: 100px;
+}
+
+/* -------------------Projects -------------------- */
+.projectsHover {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out !important;
+}
+.shadowChildupdateProjects {
+  top: -14px;
+  left: 25%;
+  font-size: 100px;
+}
+.projectsHoverParent {
+  position: relative;
+  height: 250px;
+  transition: all 0.5s ease-in-out !important;
+}
+.projectsHoverParent:hover .projectsHover {
+  display: block;
+  background-color: rgb(0 0 0 / 78%);
+  transition: all 0.5s ease-in-out !important;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -ms-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
+}
+.btnprojects:hover {
+  background-color: white;
+  outline: white 2px;
+}
+/* ------------------------- blog-------------------------- */
+.shadowChildupdateBlog {
+  top: -11px;
+  left: 22%;
+  font-size: 110px;
+}
+.blogHeight {
+  height: 450px;
+}
+.blogContHeight{
+  height: 200px;
+}
+/* -----------------------hireMe----------- */
+.hireMe {
+  background-image: url(../images/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.hireMeHover{
+  min-height: 80px;
+  font-weight: bolder;
+}
+.hireMeHover:hover{
+  background-color: Rgb(255,226,39) !important;
+  color: #000000;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+/* ---------------------Contact--------------------------- */
+
+.shadowChildupdateContact {
+  top: -11px;
+  left: 22%;
+  font-size: 110px;
+}
+.ContactIcon {
+  background-color: rgb(26, 26, 26);
+}
+.hireMeBoxes div {
+  padding: 20px 30px 10px 30px;
+  position: relative;
+  top: -40px;
+}
+.hireMe {
+  padding: 1px;
+  position: relative;
+  top: 45px;
+}
+
+/* -------------- footer-------------------------- */
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footerLink:hover {
+  transition: all 0.3s;
+  color: rgb(255, 193, 7) !important;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carselCont {
+    width: 100% !important;
+    padding-left: 30px;
+  }
+
+  .AboutOverlay {
+    left: 6px;
+    font-size: 80px;
+    top: 21px;
+  }
+  .shadowChildupdateProjects {
+    left: -31% !important;
+    font-size: 70px;
+  }
+  .shadowChildupdateBlog {
+    left: -12px;
+    font-size: 58px;
+    top: 5px;
+  }
+  .shadowChildupdateContact {
+    left: -19% !important;
+    font-size: 55px;
+    top: 8px;
+}
+
+  
+  .shadowChildupdateSkills {
+    left: -10% !important;
+    font-size: 95px;
+  }
+  .shadowChildupdate {
+    left: -16% !important;
+    font-size: 64px;
+  }
+  .shadowChildResume {
+    left: -3% !important;
+    font-size: 70px;
+  }
+  .CarselBtn {
+    padding: 10px 33px !important;
+  }
+  .CarselBtn2 {
+    padding: 10px 7px !important;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .shadowChildupdateContact{
+    left: -33px;
+  }
+  /*  */
+  .CarselBtn {
+    padding: 10px 33px !important;
+  }
+  .CarselBtn2 {
+    padding: 10px 7px !important;
+  }
+
+  .carselCont {
+    width: 100%;
+  }
+  .shadowChildupdateBlog {
+    left: -49px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .shadowChildupdateContact{
+    left: 42px;
+  }
+  .shadowChildupdateBlog {
+    left: 25px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hireMeHover{
+    min-width: 225px;
+    padding: 20px 30px 10px 30px !important;
+    margin: auto;
+    right: 20px;
+    
+  }
+  .shadowChildupdateBlog {
+    left: 78px;
+  }
+ 
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+@media (max-width: 991.98px) {
+  .aboutImg {
+    display: none;
+  }
+  .AboutMedia {
+    margin: auto;
+  }
+  .aboutParent {
+    justify-content: center;
+  }
+  .nav-link {
+    width: 25%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .AboutMedia {
+    width: 85% !important;
+  }
+  .Birth {
+    width: 65% !important;
+  }
+  .AboutData {
+    flex-direction: column;
+  }
+ 
+
+
+  .shadowChildupdateSkills {
+    left: 8%;
+  }
+  .shadowChildupdate {
+    left: -15%;
+  }
+  .shadowChildResume {
+    left: 1%;
+  }
+  .caruselimg {
+    display: none;
+  }
+  .caruselContainer2 {
+    height: 90vh;
+    background-image: url(../images/n2.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .caruselContainer {
+    height: 90vh;
+    background-image: url(../images/n3.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 768px) {
+  .CarselBtn {
+    padding: 8px 48px !important;
+  }
+  .CarselBtn2 {
+    padding: 8px 24px !important;
+  }
+}
+/* ------------------------------------------- */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------------loading------------------------------ */
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+  animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+  animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot {
+  80%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4);
+  }
+  100%,
+  0% {
+    transform: scale(1);
+  }
+}
